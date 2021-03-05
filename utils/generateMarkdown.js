@@ -17,13 +17,27 @@ function renderLicenseBadge(license) {
     default: 
       const licenseBadge = "";
   }
-
 };
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  switch(license){
+    case 'Apache License 2.0': 
+      const licenseBadge = `https://opensource.org/licenses/Apache-2.0`;
+      break;
+    case 'GNU GPLv3': 
+      const licenseBadge = `https://www.gnu.org/licenses/gpl-3.0`;
+      break;
+    case 'Mozilla Public License 2.0': 
+      const licenseBadge = `https://opensource.org/licenses/MPL-2.0`;
+      break;
+    case 'MIT License': 
+      const licenseBadge = `https://opensource.org/licenses/MIT`;
+      break;
+    default: 
+      const licenseBadge = "";
+  }
 };
 
 // TODO: Create a function that returns the license section of README
