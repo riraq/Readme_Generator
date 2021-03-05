@@ -24,31 +24,47 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch(license){
     case 'Apache License 2.0': 
-      const licenseBadge = `https://opensource.org/licenses/Apache-2.0`;
+      const licenseLink = `https://opensource.org/licenses/Apache-2.0`;
       break;
     case 'GNU GPLv3': 
-      const licenseBadge = `https://www.gnu.org/licenses/gpl-3.0`;
+      const licenseLink = `https://www.gnu.org/licenses/gpl-3.0`;
       break;
     case 'Mozilla Public License 2.0': 
-      const licenseBadge = `https://opensource.org/licenses/MPL-2.0`;
+      const licenseLink = `https://opensource.org/licenses/MPL-2.0`;
       break;
     case 'MIT License': 
-      const licenseBadge = `https://opensource.org/licenses/MIT`;
+      const licenseLink = `https://opensource.org/licenses/MIT`;
       break;
     default: 
-      const licenseBadge = "";
+      const licenseLink = "";
   }
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+  switch(license){
+    case 'Apache License 2.0': 
+      const licenseSection = `   Licensed under the ${license}; You may obtain a copy of the License at https://opensource.org/licenses/Apache-2.0`;
+      break;
+    case 'GNU GPLv3': 
+      const licenseSection = `   Licensed under the ${license}; You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0`;
+      break;
+    case 'Mozilla Public License 2.0': 
+      const licenseSection = `   Licensed under the ${license}; You may obtain a copy of the License at https://opensource.org/licenses/MPL-2.0`;
+      break;
+    case 'MIT License': 
+      const licenseSection = `   Licensed under the ${license}; You may obtain a copy of the License at https://opensource.org/licenses/MIT`;
+      break;
+    default: 
+      const licenseSection = "";
+  }
 };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} ${licenseBadge}
+    ## ${licenseSection}/n
 
 `;
 };
