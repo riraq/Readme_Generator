@@ -8,7 +8,7 @@ const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    // generateMarkdown()
+    generateMarkdown(data)
 
     // fs.writeFile(fileName, readme, (err) =>
     //     err ? console.error(err) : console.log('Success!')
