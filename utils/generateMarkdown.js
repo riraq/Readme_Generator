@@ -44,16 +44,16 @@ function renderLicenseLink(data) {
 function renderLicenseSection(data) {
   switch(data.license){
     case 'Apache License 2.0': 
-      licenseSection = `   Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/Apache-2.0`;
+      licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/Apache-2.0`;
       return licenseSection;
     case 'GNU GPLv3': 
-      licenseSection = `   Licensed under the ${data.license}; You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0`;
+      licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0`;
       return licenseSection;
     case 'Mozilla Public License 2.0': 
-      licenseSection = `   Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MPL-2.0`;
+      licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MPL-2.0`;
       return licenseSection;
     case 'MIT License': 
-      licenseSection = `   Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MIT`;
+      licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MIT`;
       return licenseSection;
     default: 
       licenseSection = "";
@@ -78,12 +78,14 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
-  ## Contributors
+  ## Contributing
   ${data.contribution}
-  ## Contact
-  https://github.com/${data.github}
+  ## Tests
+  ${data.testing}
   ## Questions
-  ${data.email}
+  Please reach out with any questions through the links below:
+  - https://github.com/${data.github}
+  - ${data.email}
   ## License
   ${licenseSection}
 `;
