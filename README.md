@@ -10,3 +10,10 @@ The application functions by running index.js in the command line. This brings u
 https://riraq.github.io/Readme_Generator/
 ## Video Demo
 ![Video Demo](./assets/videoDemo.gif)
+## Screenshots
+### User Input 
+![User Input](./assets/userInput.jpg)
+### Raw ReadMe
+![Raw ReadMe](./assets/rawReadMe.jpg)
+### ReadMe
+![ReadMe](./assets/readMe.jpg)
