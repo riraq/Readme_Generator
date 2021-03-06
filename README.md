@@ -9,7 +9,8 @@ The application functions by running index.js in the command line. This brings u
 ## Live Link
 https://riraq.github.io/Readme_Generator/
 ## Video Demo
-![Video Demo](./assets/videoDemo.gif)
+Direct Link - https://drive.google.com/file/d/1My_XNLbdhmWDgtFDKkgzVvJUgSGGD0Uo/view  
+![Video Demo](./assets/videoDemo.gif)  
 ## Screenshots
 ### User Input 
 ![User Input](./assets/userInput.jpg)
